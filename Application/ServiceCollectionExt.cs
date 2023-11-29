@@ -1,5 +1,6 @@
 ﻿using Application.Drivings.Commons.Pipelines;
-using Application.Drivings.Organization.V1.UseCases;
+using Application.Drivings.EndUser.Organization.V1.Dtos;
+using Application.Drivings.EndUser.Organization.V1.UseCases;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,15 +12,15 @@ public static class ServiceCollectionExt
     {
         #region MediatR
 
-        // services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ServiceCollectionExt).Assembly));
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ServiceCollectionExt).Assembly));
         
-        // services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationPipeline<,>));
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationPipeline<,>));
         
         /* Each Command Use Case have to be register with ValidationPipeline here */
         
-        // services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CommandValidationPipeline<CreateOrgCommand, CreateOrgBody, Unit>));
+        services.AddTransient(typeof(IPipelineBehavior<CreateOrgCommand, OrgResponse>), typeof(CommandValidationPipeline<CreateOrgCommand, CreateOrgBody, OrgResponse>));
         
-        // services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationPipeline<x,x,x>));
+        // services.AddTransient(typeof(IPipelineBehavior<x,z>), typeof(ValidationPipeline<x,y,z>));
 
         #endregion
         

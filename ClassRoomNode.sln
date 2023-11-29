@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drivings", "Drivings", "{40
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimaryDbSqlServer", "Drivens\PrimaryDbSqlServer\PrimaryDbSqlServer.csproj", "{5F25DF79-E43A-432B-835F-12579594EBA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestfulApi", "Drivings\RestfulApi\RestfulApi.csproj", "{673EBCBF-F012-471E-816C-4965FB482325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth0Identity", "Drivens\Auth0Identity\Auth0Identity.csproj", "{39A91EB9-D20B-4401-B13E-51A9162B3203}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,8 +32,18 @@ Global
 		{5F25DF79-E43A-432B-835F-12579594EBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F25DF79-E43A-432B-835F-12579594EBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F25DF79-E43A-432B-835F-12579594EBA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673EBCBF-F012-471E-816C-4965FB482325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673EBCBF-F012-471E-816C-4965FB482325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673EBCBF-F012-471E-816C-4965FB482325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673EBCBF-F012-471E-816C-4965FB482325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A91EB9-D20B-4401-B13E-51A9162B3203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A91EB9-D20B-4401-B13E-51A9162B3203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A91EB9-D20B-4401-B13E-51A9162B3203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A91EB9-D20B-4401-B13E-51A9162B3203}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5F25DF79-E43A-432B-835F-12579594EBA0} = {A93DDB18-A8B7-426B-A06F-F87E95734A04}
+		{673EBCBF-F012-471E-816C-4965FB482325} = {40A18085-E732-4440-8A08-6FB12F9FC2B0}
+		{39A91EB9-D20B-4401-B13E-51A9162B3203} = {A93DDB18-A8B7-426B-A06F-F87E95734A04}
 	EndGlobalSection
 EndGlobal
