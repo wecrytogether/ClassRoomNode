@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PrimaryDbSqlServer.Repositories;
 
-public record BaseRepository<TEntity, TId> : IBaseRepository<TEntity, TId>
+internal record BaseRepository<TEntity, TId> : IBaseRepository<TEntity, TId>
     where TEntity : BaseEntity<TId>
     where TId : BaseId
 {

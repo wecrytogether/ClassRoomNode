@@ -15,6 +15,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Application\Application.csproj" />
+      <ProjectReference Include="..\Drivens\Auth0Identity\Auth0Identity.csproj" />
       <ProjectReference Include="..\Drivens\PrimaryDbSqlServer\PrimaryDbSqlServer.csproj" />
       <ProjectReference Include="..\Drivings\RestfulApi\RestfulApi.csproj" />
     </ItemGroup>

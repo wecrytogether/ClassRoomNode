@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace PrimaryDbSqlServer.EntityConfigurations;
 
-public class OrgMemberConfiguration : BaseEntityConfiguration<OrgMember, OrgMemberId>
+internal class OrgMemberConfiguration : BaseEntityConfiguration<OrgMember, OrgMemberId>
 {
     public override void Configure(EntityTypeBuilder<OrgMember> builder)
     {

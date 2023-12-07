@@ -7,7 +7,7 @@ using PrimaryDbSqlServer.Repositories;
 
 namespace PrimaryDbSqlServer;
 
-public sealed class PrimaryDbSqlServerCtx : PrimaryDbCtx
+internal sealed class PrimaryDbSqlServerCtx : PrimaryDbCtx
 {
     #region Repositories
 
